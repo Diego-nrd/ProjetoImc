@@ -1,0 +1,121 @@
+@media only screen and (max-width:800px){
+    #campo, #campo_image {
+        margin-left: 34%;
+    }
+    
+
+}
+
+#campo, #campo_image {
+    border: solid 1px #6e6e6e91;
+    border-radius: 5px 5px 5px;
+    background: #1c1c1c4d;
+    box-shadow: 1px 1px 10px;
+    width: 30%;
+    margin-left: 36%;
+    margin-top: 5%;
+}
+
+#col_img {
+    padding-left: 20%;
+    margin-top: -2%;
+    display: none;
+}
+
+#campo_image {
+    width: 3em;
+
+}
+
+#baixo,
+#normal,
+#sobre_pes,
+#obesidade,
+#obesidade2 {
+    width: 3em;
+    height: 8em;
+    border-radius: 4px 4px 4px;
+    display: none;
+}
+
+#dica_imc {
+    width: 22%;
+    margin-left: 28%;
+    border-radius: 4px;
+    color: #222222bf;
+}
+
+#dados_p {
+    border: solid 1px #fbfbfb;
+    border-radius: 12px;
+    text-align: center;
+    margin-right: 50%;
+    margin-left: 28%;
+    padding-top: 2px;
+    margin-top: 1%;
+}
+
+#texto_dica {
+    border-radius: 4px;
+    margin-top: 4px;
+    border: 2px solid #ff00005e;
+    font-size: smaller;
+}
+
+
+#campo_altura,
+#campo_peso {
+    width: 21%;
+    margin-left: 41%;
+    margin-top: 2%;
+}
+
+#altura,
+#peso {
+    background-color: #6e6e6e26;
+    font-size: 14px;
+
+}
+
+#i {
+    color: rgb(0, 162, 255);
+}
+
+#m {
+    color: #D5DB18
+}
+
+#c {
+    color: red;
+}
+
+#btn_calcular {
+    margin-top: 1%;
+    margin-left: 1em;
+}
+
+#calculo_imc {
+    font-size: 18px;
+}
+
+#texto_imc {
+    font-size: 15px;
+}
+
+#calculo_imc,
+#texto_imc {
+    color: white;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

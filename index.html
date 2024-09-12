@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/36b8a70faa.js" crossorigin="anonymous"></script>
+    <script src="Js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Cálculo de Massa Corporal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="campo" class="d-flex justify-content-center">
+                    <h2 id="i">I</h2>
+                    <h2 id="m">M</h2>
+                    <h2 id="c">C</h2>
+                </div>
+                <div id="campo_altura" class="d-flex justify-content-center">
+                    <input id="altura" placeholder="Altura: 1.80" type="text" oninput="sepAlt(this)" maxlength="4"
+                        class="form-control text-dark">
+                </div>
+                <div id="campo_peso" class="d-flex justify-content-center">
+                    <input id="peso" placeholder="Peso: 50.0" type="text" oninput="sepPeso(this)" maxlength="5"
+                        class="form-control text-dark">
+                </div>
+                <div id="campo_botao" class="d-flex justify-content-center">
+                    <button onclick="imc('acao','btn')" id="btn_calcular"
+                        class="btn-dark btn-sm font-weight-light">Calcular</button>
+                </div>
+                <div id="col_img" class="col">
+                    <div id="campo_image" class="d-flex justify-content-center">
+                        <img id="baixo" src="image/PesoBaixo.png">
+                        <img id="normal" src="image/PesoNormal.png">
+                        <img id="sobre_pes" src="image/SobrePeso.png">
+                        <img id="obesidade" src="image/Obesidade.png">
+                        <img id="obesidade2" src="image/ObesidadeGrave.png">
+                    </div>
+                    <div id="dados_p">
+                        <h5 id="calculo_imc">-18,5</h5>
+                        <h7 id="texto_imc">Abaixo do Normal</h7>
+                    </div>
+                    <div id="dica_imc">
+                        <p id="texto_dica">
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
