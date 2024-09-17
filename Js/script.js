@@ -55,8 +55,8 @@ function imc(tipo, op) {
             backgroundColor = "#74b6d8";
             backgroundColor2 = '#74b6d845'
             text = "Abaixo do peso!";
-            dica = "O seu peso não está combinando com sua altura " +
-                "está muito baixo. Aqui vai umas dicas," +
+            dica = "O seu peso não está combinando com sua altura.<br>" +
+                "Está muito baixo, aqui vai umas dicas," +
                 "para aumentar o peso de forma saudável.<br>" +
                 "1º Se alimente corretamente com alimentos saudáveis.<br>" +
                 "2º Pratique Exercicios físico para o aumento da massa muscular.<br>" +
@@ -67,8 +67,8 @@ function imc(tipo, op) {
             backgroundColor = "#26c7a4";
             backgroundColor2 = "#26c7a461"
             text = "Peso Ideal!";
-            dica = "O seu peso está ideal com sua altura " +
-                "continue assim o seu peso está normal " +
+            dica = "O seu peso está ideal com sua altura!<br>" +
+                "Continue assim o seu peso está normal, " +
                 "a dica é mantenha seu peso, e seu estilo de vida " +
                 "com alimentação equilibrada e exercicios físicos!"
 
@@ -77,9 +77,9 @@ function imc(tipo, op) {
             backgroundColor = "#ffd900";
             backgroundColor2 = "#ffd90057";
             text = "Sobre Peso!";
-            dica = "O seu peso está um pouco acima do ideal! " +
+            dica = "O seu peso está um pouco acima do ideal!<br> " +
                 "Pessoas acima do peso, pode apresentar doenças " +
-                "como diabetes e hipertensão, Aqui vai umas dicas," +
+                "como diabetes e hipertensão. Aqui vai umas dicas," +
                 "para a perca de peso de forma saudável.<br>" +
                 "1º Se alimentar corretamente, evitar alimentos de alto sódio e gorduras.<br>" +
                 "2º Praticar exercicios físicos para a perca de gordura.<br>" +

@@ -1,110 +1,208 @@
-@media only screen and (max-width:800px){
-    #campo, #campo_image {
-        margin-left: 34%;
+    #campo,#campo_image {
+        border: solid 1px #6e6e6e91;
+        border-radius: 5px 5px 5px;
+        background: #1c1c1c4d;
+        box-shadow: 1px 1px 10px;
+        width: 30%;
+        margin-left: 36%;
+        margin-top: 5%;
+    }
+
+    #col_img {
+        padding-left: 20%;
+        margin-top: -2%;
+        display: none;
+    }
+
+    #campo_image {
+        width: 3em;
+
+    }
+
+    #baixo,#normal,#sobre_pes,#obesidade,#obesidade2 {
+        width: 3em;
+        height: 8em;
+        border-radius: 4px 4px 4px;
+        display: none;
+    }
+
+    #dica_imc {
+        width: 54%;
+        margin-left: 13%;
+        color: #222222bf;
+    }
+
+    #dados_p {
+        border: solid 1px #fbfbfb;
+        border-radius: 12px;
+        text-align: center;
+        margin-right: 50%;
+        margin-left: 28%;
+        padding-top: 2px;
+        margin-top: 1%;
+    }
+
+    #texto_dica {
+        border-radius: 4px;
+        margin-top: 4px;
+        border: 2px solid #ff00005e;
+        font-size: smaller;
+        text-align: center;
+    }
+
+
+    #campo_altura,#campo_peso {
+        width: 21%;
+        margin-left: 41%;
+        margin-top: 2%;
+    }
+
+    #altura,#peso {
+        background-color: #6e6e6e26;
+        font-size: 14px;
+
+    }
+
+    #i {
+        color: rgb(0, 162, 255);
+    }
+
+    #m {
+        color: #D5DB18
+    }
+
+    #c {
+        color: red;
+    }
+
+    #btn_calcular {
+        margin-top: 1%;margin-left: 1em;
+    }
+
+    #calculo_imc {
+        font-size: 18px;
+    }
+
+    #texto_imc {
+        font-size: 15px;
+    }
+
+    #calculo_imc,#texto_imc {
+        color: white;
+    }
+ 
+@media only screen and (max-width: 991px) {
+    #campo_image{
+        margin-left: 35%;
+
     }
     
-
 }
 
-#campo, #campo_image {
-    border: solid 1px #6e6e6e91;
-    border-radius: 5px 5px 5px;
-    background: #1c1c1c4d;
-    box-shadow: 1px 1px 10px;
-    width: 30%;
-    margin-left: 36%;
-    margin-top: 5%;
+@media only screen and (max-width: 767px) {
+    #campo{
+        height: 16%;
+    }
+
+    #campo_altura, #campo_peso{
+        width: 24%;
+        font-size: 12px;
+        margin-left: 39%;
+        margin-top: 2%;
+    }
+
+    #altura, #peso{
+        font-size: 13px;
+    }
+    
+    #i, #m, #c{
+        font-size: 23px;
+    }
+
+    .form-control{
+        padding: 2px 3px;
+    }
+
+    #baixo,#normal,#sobre_pes,#obesidade,#obesidade2{
+        width: 2.4em;
+        height: 6em;
+    }
+
+    .btn-sm{
+        padding: 0.10rem .4rem;
+    }
+
+    #campo_image{
+        margin-left: 35%;
+        width: 2.4em;
+        height: 6.1em;
+    }
+
+    #dados_p{
+        width: 28%;
+        margin-left: 26%;
+        
+    }
+
+    #calculo_imc{
+        font-size: 14px;
+        margin-bottom: auto;
+    }
+
+    #texto_imc{
+        font-size: 11px;
+    }
+
+    #texto_dica{
+        font-size: 12.5px;
+    }
+
+    #dica_imc{
+        margin-left: 14%;
+    }
 }
 
-#col_img {
-    padding-left: 20%;
-    margin-top: -2%;
-    display: none;
+@media only screen and (max-width: 412px){
+    #campo_altura, #campo_peso{
+        width: 30%;
+        margin-left: 36%;
+        
+    }
+
+    #altura, #peso{
+        font-size: 12px;
+    }
+    
+    #btn_calcular{
+        margin-top: 3%;
+
+    }
+
+    #dados_p{
+        width: 30%;
+        margin-left: 28%;
+    }
+
+    #dica_imc{
+        width: 55%;
+    }
 }
 
-#campo_image {
-    width: 3em;
+@media only screen and (max-width: 314px){
+    #campo_image{
+        margin-left: 32%;
+    }
 
-}
+   .btn-sm {
+    padding: 0.1rem .3rem;
+   }
 
-#baixo,
-#normal,
-#sobre_pes,
-#obesidade,
-#obesidade2 {
-    width: 3em;
-    height: 8em;
-    border-radius: 4px 4px 4px;
-    display: none;
-}
-
-#dica_imc {
-    width: 22%;
-    margin-left: 28%;
-    border-radius: 4px;
-    color: #222222bf;
-}
-
-#dados_p {
-    border: solid 1px #fbfbfb;
-    border-radius: 12px;
-    text-align: center;
-    margin-right: 50%;
-    margin-left: 28%;
-    padding-top: 2px;
-    margin-top: 1%;
-}
-
-#texto_dica {
-    border-radius: 4px;
-    margin-top: 4px;
-    border: 2px solid #ff00005e;
-    font-size: smaller;
-}
+   #dados_p{
+    width: 35%;
+    margin-left: 23%;
+   }
 
 
-#campo_altura,
-#campo_peso {
-    width: 21%;
-    margin-left: 41%;
-    margin-top: 2%;
-}
-
-#altura,
-#peso {
-    background-color: #6e6e6e26;
-    font-size: 14px;
-
-}
-
-#i {
-    color: rgb(0, 162, 255);
-}
-
-#m {
-    color: #D5DB18
-}
-
-#c {
-    color: red;
-}
-
-#btn_calcular {
-    margin-top: 1%;
-    margin-left: 1em;
-}
-
-#calculo_imc {
-    font-size: 18px;
-}
-
-#texto_imc {
-    font-size: 15px;
-}
-
-#calculo_imc,
-#texto_imc {
-    color: white;
 }
 
 
