@@ -37,36 +37,44 @@ function imc(tipo, op) {
         const resutImc = document.getElementById("calculo_imc");
         const resutTextImc = document.getElementById("texto_imc");
         const text_dica = document.getElementById("texto_dica");
+        //const ponteiro = document.getElementById("ponteiro");
 
         const imc = parseFloat(v_peso / (v_altura * v_altura)).toFixed(2)
 
         const resultSections = ['baixo', 'normal', 'sobre_pes', 'obesidade', 'obesidade2'];
         resultSections.forEach(id => document.getElementById(id).style.display = "none");
         document.getElementById('col_img').style.display = "none";
+        
 
         let backgroundColor = "";
         let backgroundColor2 = "";
         let text = "";
         let displayId = "";
         let dica = "";
+        let ponteiro = "z 0deg";
+        let grau;
 
         if (imc <= 18.49) {
             displayId = 'baixo';
             backgroundColor = "#74b6d8";
             backgroundColor2 = '#74b6d845'
             text = "Abaixo do peso!";
+            grau = ( imc  / 20) * 31
             dica = "O seu peso não está combinando com sua altura.<br>" +
                 "Está muito baixo, aqui vai umas dicas," +
                 "para aumentar o peso de forma saudável.<br>" +
                 "1º Se alimente corretamente com alimentos saudáveis.<br>" +
                 "2º Pratique Exercicios físico para o aumento da massa muscular.<br>" +
                 "O Mais recomendado seria a procura de um médico, para um auxilio correto."
+         
+    
 
         } else if (imc >= 18.50 && imc <= 24.99) {
             displayId = 'normal';
             backgroundColor = "#26c7a4";
             backgroundColor2 = "#26c7a461"
             text = "Peso Ideal!";
+            grau = ((imc - 10) / 11.2) * 52.2;
             dica = "O seu peso está ideal com sua altura!<br>" +
                 "Continue assim o seu peso está normal, " +
                 "a dica é mantenha seu peso, e seu estilo de vida " +
@@ -77,6 +85,7 @@ function imc(tipo, op) {
             backgroundColor = "#ffd900";
             backgroundColor2 = "#ffd90057";
             text = "Sobre Peso!";
+            grau = ((imc - 10) / 11.7) * 61.4;
             dica = "O seu peso está um pouco acima do ideal!<br> " +
                 "Pessoas acima do peso, pode apresentar doenças " +
                 "como diabetes e hipertensão. Aqui vai umas dicas," +
@@ -91,27 +100,33 @@ function imc(tipo, op) {
             backgroundColor = "#fea04a";
             backgroundColor2 = "#fea04a80";
             text = "Obesidade!";
+            grau = ((imc - -5) / 4.9) * 15.5;
             dica = "O seu peso está acima do Ideal!<br>" +
                 "Pessoas com esse nivel de imc, " +
                 "tem que se cuida melhor, mesmo que os exames estejam normais.<br> " +
                 "Cuide de sua alimentação, e pratique exercicios físicos.<br> " +
                 "Recomendamos que procure um nutricionista, para um auxilio correto.";
 
-        } else {
+        } else if (imc >= 40){
             displayId = 'obesidade2';
             backgroundColor = "#ff454d";
             backgroundColor2 = "#ff454f85"
             text = "Obesidade Grave!";
+            grau = ((imc - -374) / 15 ) * 5.4;
             dica = "Sinal vermelho!!!<br>" +
                 "Possibilidade de existirem doenças graves<br>" +
                 "O tratamento deve ser o mais urgente.";
 
+        }else{
+            alert('Nop')
         }
 
+    
         document.getElementById(displayId).style.display = "block";
         document.getElementById('col_img').style.display = "block";
         document.getElementById('dados_p').style.backgroundColor = backgroundColor;
         document.getElementById('dica_imc').style.backgroundColor = backgroundColor2;
+        document.getElementById('ponteiro').style.rotate = grau = `z ${grau}deg`;
         resutImc.innerHTML = imc
         resutTextImc.innerHTML = text;
         text_dica.innerHTML = dica;
