@@ -123,6 +123,15 @@
      #ponteiro{
         transform-origin: 64px 73px;
      }
+
+     #dica_imc{
+        margin-top: -37%;
+     }
+
+     @keyframes avanca{
+        from {margin-left: 22%;}
+        to {margin-left: 52%;}
+    }
 }    
 
  
@@ -138,7 +147,7 @@
     }
 
     #ponteiro{
-        transform-origin: 54px 60px;
+        transform-origin: 51px 53px;
         width: 9%;
         margin-left: -16%;
     }
@@ -164,17 +173,13 @@
     
 }
 
-@media only screen and (max-width: 767px){  
-    .container{
-        margin-top: 10%;
-    }
-    
+@media only screen and (max-width: 767px){      
     #logo{
        width: 33.8%;
     }
 
     #ponteiro{
-        transform-origin: 74px 61px;
+        transform-origin: 68px 58px;
         width: 18.8%;
         margin-left: -29%;
         margin-top: 3.4%;
@@ -228,11 +233,13 @@
     
     @keyframes avanca{
         from {margin-left: 14%;}
-        to {margin-left: 59%;}
+        to {margin-left: 63%;}
     }
 }
 
 @media only screen and (max-width: 575px) {
+    
+
     #ponteiro{
         transform-origin: 79px 65px;
     }
@@ -257,17 +264,24 @@
     }
 }
 
-@media only screen and (max-width: 560px){
+@media only screen and (max-width: 575px){
     #ponteiro{
         transform-origin: 75px 58px;
     }
-}   
+}
+
+@media only screen and (max-width: 540px){
+    #ponteiro{
+        transform-origin: 67px 52px;
+    }
+}  
 
 @media only screen and (max-width: 515px){
     #ponteiro{
-        transform-origin: 72px 53px;
+        transform-origin: 67px 52px;
     }
-}   
+}
+
 
 @media only screen and (max-width: 500px){
     #ponteiro{
@@ -289,7 +303,20 @@
 
 @media only screen and (max-width: 480px){
     #ponteiro{
-        transform-origin: 66px 48px;
+        transform-origin: 61px 44px;
+    }
+
+    #dica_imc{
+        margin-top: -91%;
+    }
+
+    #campo_image{
+        margin-left: 5%;
+    }
+
+    #dados_p{
+        margin-right: 59%;
+        margin-left: -1%;
     }
 }   
 
@@ -310,7 +337,7 @@
     }
 
     #campo_image{
-        margin-left: 1%;
+        margin-left: -17%;
     }
 
     #campo_altura, #campo_peso{
@@ -318,8 +345,13 @@
     }
 
     #dados_p{
-       margin-right: 56%;
-       margin-left: -5%;
+       margin-right: 77%;
+       margin-left: -19%;
+    }
+
+    #dica_imc{
+        margin-top: -98%;
+        width: 85%;
     }
 
     #btn_calcular{
@@ -328,7 +360,43 @@
        margin-bottom: 4%;
     }
 
+    @keyframes avanca{
+        from {margin-left: -18%;}
+        to {margin-left: 22%;}
+    }
+
 }
+
+@media only screen and (max-width: 440px){
+    #ponteiro{
+        transform-origin: 63px 49px;
+    }
+}  
+
+@media only screen and (max-width: 425px){
+    #ponteiro{
+        transform-origin: 59px 49px;
+    }
+
+    #dica_imc{
+        margin-top: -103%;
+    }
+
+    #campo_image{
+        margin-left: -18%;
+    }
+
+    #dados_p{
+        margin-right: 77%;
+        margin-left: -22%;
+    }
+
+    @keyframes avanca{
+        from {margin-left: -18%;}
+        to {margin-left: 22%;}
+    }
+} 
+
 
 @media only screen and (max-width: 410px){
     #ponteiro{
@@ -341,20 +409,31 @@
     transform-origin: 59px 44px;
    }
 
+   #btn_calcular{
+    width: 24%;
+   }
+
    #dica_imc{
-    margin-top: -112%;
+    margin-top: -114%;
    }
 
    #dados_p{
-    margin-right: 54%;
-    margin-left: -6%;
+    margin-right: 74%;
+    margin-left: -22%;
    }
 
    @keyframes avanca{
-    from {margin-left: 18%;}
-    to {margin-left: 52%;}
+    from {margin-left: -18%;}
+    to {margin-left: 24%;}
+  }
 }
+
+@media only screen and (max-width: 377px){   
+    #campo_altura, #campo_peso{
+        width: 39%;
+    }
 }
+
 
 @media only screen and (max-width: 375px){   
     #logo{
@@ -362,10 +441,14 @@
     }
 
     #ponteiro{
-        transform-origin: 60px 45px;
+        transform-origin: 59px 38px;
         width: 21.8%;
         margin-left: -35%;
         margin-top: 5.1%;
+    }
+
+    #campo_image{
+        margin-left: -23%;
     }
 
     #campo_altura, #campo_peso{
@@ -373,10 +456,14 @@
         margin-left: 34%;
         margin-top: 5%;
     }
+
+    #dica_imc{
+        margin-top: -121%;
+    }
     
     #dados_p{
-        margin-right: 49%;
-        margin-left: -9%;
+        margin-right: 77%;
+        margin-left: -27%;
     }
 
     #btn_calcular{
@@ -385,7 +472,15 @@
         margin-bottom: 5%;
     }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 340px){
+    #ponteiro{
+        transform-origin: 50px 38px;
+    }
+}  
+    
+
+
+@media only screen and (max-width: 323px){
    #logo{
     width: 47.8%;
    }
@@ -404,16 +499,16 @@
    }
 
    #campo_image{
-    margin-left: -8%;
+    margin-left: -28%;
    }
 
    #dica_imc{
-    margin-top: -126%;
+    margin-top: -144%;
    }
 
    #dados_p{
-    margin-right: 45%;
-    margin-left: -17%;
+    margin-right: 73%;
+    margin-left: -33%;
    }
 
    #campo_botao{
@@ -424,11 +519,12 @@
     width: 30%;
     margin-bottom: 6%;
    }
-   
 
+   @keyframes avanca{
+    from {margin-left: -18%;}
+    to {margin-left: 27%;}
+  }
 }   
-
-
 }
 
 
