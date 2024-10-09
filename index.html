@@ -16,6 +16,12 @@
     <div class="container">
         <div class="row">
             <div class="col">
+                <div id="btn_dark" class="d-flex justify-content-center">
+                  <label class="switch">
+                    <input id="toggleSwitch" type="checkbox" onclick="dark_mode()">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
                 <div id="campo" class="d-flex justify-content-center">
                     <img id="logo" src="image/Recuperado_SEM TíTULO-1.png">
                     <img id="ponteiro" src="image/Ponteiro2.png">
@@ -33,7 +39,7 @@
                 </div>
                 <div id="campo_botao" class="d-flex justify-content-center">
                     <button onclick="imc('acao','btn')" id="btn_calcular"
-                        class="btn-dark btn-sm font-weight-light">Calcular</button>
+                     class="btn btn-dark btn-md">Calcular</button>
                 </div>
                 <div id="col_img" class="col">
                     <div id="campo_image" class="d-flex justify-content-center">
@@ -55,5 +61,4 @@
         </div>
     </div>
 </body>
-
 </html>
