@@ -470,7 +470,7 @@ input:checked+.slider.round::before {
 
 @media only screen and (max-width: 480px) {
     .container{
-        margin-left: -1%;
+        margin-left: -3%;
     }
 
     #ponteiro {
@@ -568,7 +568,7 @@ input:checked+.slider.round::before {
     #ponteiro {
         transform-origin: 59px 49px;
     }
-
+    
     #dica_imc {
         margin-top: -103%;
     }
@@ -613,6 +613,10 @@ input:checked+.slider.round::before {
         margin-left: 11%;
     }
 
+    #btn_dark {
+        margin-left: 86%;
+    }
+
 
 }
 
@@ -653,7 +657,6 @@ input:checked+.slider.round::before {
 }
 
 @media only screen and (max-width: 377px) {
-
     #campo_altura,#campo_peso {
         width: 39%;
     }
@@ -704,7 +707,6 @@ input:checked+.slider.round::before {
     }
 
     @media only screen and (max-width: 323px) {
-
         #logo {
             width: 47.8%;
         }
