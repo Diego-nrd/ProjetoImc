@@ -469,6 +469,10 @@ input:checked+.slider.round::before {
 
 
 @media only screen and (max-width: 480px) {
+    .container{
+        margin-left: -1%;
+    }
+
     #ponteiro {
         transform-origin: 61px 44px;
     }
@@ -700,6 +704,7 @@ input:checked+.slider.round::before {
     }
 
     @media only screen and (max-width: 323px) {
+
         #logo {
             width: 47.8%;
         }
