@@ -101,7 +101,7 @@ function imc(tipo, op) {
                 "Possibilidade de existirem doenças graves<br>" +
                 "O tratamento deve ser o mais urgente.";
         } else {
-            alert('Nop')
+            alert('Existem campos vazio !!')
         }
         document.getElementById(displayId).style.display = "block";
         document.getElementById('col_img').style.display = "block";
