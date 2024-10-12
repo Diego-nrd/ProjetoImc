@@ -360,7 +360,6 @@ input:checked+.slider.round::before {
 
     #dica_imc {
         margin-top: -80%;
-
     }
 
     #dados_p {
@@ -394,10 +393,7 @@ input:checked+.slider.round::before {
     }
 }
 
-
 @media only screen and (max-width: 575px) {
-
-
     #ponteiro {
         transform-origin: 79px 65px;
     }
@@ -470,7 +466,7 @@ input:checked+.slider.round::before {
 
 @media only screen and (max-width: 480px) {
     .container{
-        margin-left: -3%;
+        margin-left: -1.9%;
     }
 
     #ponteiro {
@@ -563,7 +559,6 @@ input:checked+.slider.round::before {
     }
 }
 
-
 @media only screen and (max-width: 425px) {
     #ponteiro {
         transform-origin: 59px 49px;
@@ -616,10 +611,7 @@ input:checked+.slider.round::before {
     #btn_dark {
         margin-left: 86%;
     }
-
-
 }
-
 
 @media only screen and (max-width: 410px) {
     #ponteiro {
@@ -661,7 +653,6 @@ input:checked+.slider.round::before {
         width: 39%;
     }
 }
-
 
 @media only screen and (max-width: 375px) {
     #logo {
