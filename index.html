@@ -9,7 +9,8 @@
     <script src="https://kit.fontawesome.com/36b8a70faa.js" crossorigin="anonymous"></script>
     <script src="Js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Cálculo de Massa Corporal</title>
+    <title>Cálculo de IMC </title>
+    <link rel="icon" type="image/imc" href="image/imc.png">
 </head>
 
 <body>
@@ -17,29 +18,28 @@
         <div class="row">
             <div class="col">
                 <div id="btn_dark" class="d-flex justify-content-center">
-                  <label class="switch">
-                    <input id="toggleSwitch" type="checkbox" onclick="dark_mode()">
-                    <span class="slider round"></span>
-                  </label>
+                    <label class="switch">
+                        <input id="toggleSwitch" type="checkbox" onclick="dark_mode()">
+                        <span class="slider round"></span>
+                    </label>
                 </div>
                 <div id="campo" class="d-flex justify-content-center">
-                    <img id="logo" src="image/Recuperado_SEM TíTULO-1.png">
+                    <img id="logo" src="image/imc_logo.png">
                     <img id="ponteiro" src="image/Ponteiro2.png">
                 </div>
                 <div id="nome" class="d-flex justify-content-center">
                     <h3>I M C</h3>
                 </div>
                 <div id="campo_altura" class="d-flex justify-content-center">
-                    <input id="altura" placeholder="Altura: 1.80" type="text" oninput="sepAlt(this)"
-                     maxlength="4" class="form-control text-dark">
+                    <input id="altura" placeholder="Altura: 1.80" type="text" oninput="sepAlt(this)" maxlength="4"
+                        class="form-control text-dark">
                 </div>
                 <div id="campo_peso" class="d-flex justify-content-center">
                     <input id="peso" placeholder="Peso: 50.0" type="text" oninput="sepPeso(this)" maxlength="5"
                         class="form-control text-dark">
                 </div>
                 <div id="campo_botao" class="d-flex justify-content-center">
-                    <button onclick="imc('acao','btn')" id="btn_calcular"
-                     class="btn btn-dark btn-md">Calcular</button>
+                    <button onclick="imc('acao','btn')" id="btn_calcular" class="btn btn-dark btn-md">Calcular</button>
                 </div>
                 <div id="col_img" class="col">
                     <div id="campo_image" class="d-flex justify-content-center">
@@ -61,4 +61,5 @@
         </div>
     </div>
 </body>
+
 </html>

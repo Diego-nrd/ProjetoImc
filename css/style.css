@@ -1,55 +1,61 @@
-.dark_mode{
-  background-color: #252525;
-  color: white;
+.dark_mode {
+    background-color: #252525;
+    color: white;
 
-#altura,#peso {
-  background-color: #ffffff;
-  font-size: 14px;
-}  
+    #altura,
+    #peso {
+        padding-left: 2%;
+        background-color: #ffffff;
+        font-size: 15px;
+        height: 2.1em;
+    }
 
-#dados_p{
-    border: 1px solid #000;
+    #dados_p {
+        border: 1px solid #000;
+    }
+
+    #calculo_imc,
+    #texto_imc {
+        color: #000;
+    }
+
+    #texto_dica {
+        border: 2px solid white;
+    }
+
+    #btn_calcular {
+        background: #ffffff;
+        color: #000;
+    }
+
+    #btn_calcular:hover {
+        color: white;
+        background: rgba(5, 66, 196, 0.137);
+        border-color: rgba(0, 0, 255, 0.425);
+    }
+
+    #btn_calcular:active {
+        background-color: #f1f1f1ad;
+        box-shadow: 0 5px #0f0f0faf;
+        transform: translateY(4px);
+    }
+
 }
 
-#calculo_imc, #texto_imc{
-    color: #000;
-}
-
-#texto_dica{
-    border: 2px solid white;
-}
-
-#btn_calcular{
-    background: #ffffff;
-    color: #000;
-}
-
-#btn_calcular:hover{
-    background: rgb(83, 83, 83);
-}
-
-#btn_calcular:active{
-    background-color: #f1f1f1ad;
-    box-shadow: 0 5px #0f0f0faf;
-    transform: translateY(4px);
-}
-
-}
-
-#btn_dark{
-  width: 22%;
-  margin-left: 81%;
-  margin-top: 2%;
+#btn_dark {
+    width: 22%;
+    margin-left: 81%;
+    margin-top: 1.5%;
 }
 
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 80px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
 }
 
-.switch input{
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
@@ -62,12 +68,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #08ccf93b;
+    background-color: #08b6f947;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
-.slider::before{
+.slider::before {
     position: absolute;
     content: url("../image/day.png");
     height: 26px;
@@ -79,15 +85,15 @@
     transform: rotate(160deg);
 }
 
-input:checked + .slider {
-    background-color: #006ecd3b
+input:checked+.slider {
+    background-color: #00258d57
 }
 
-input:focus + .slider{
-    box-shadow: 0 0 1px #08ccf93b;
+input:focus+.slider {
+    box-shadow: 0 0 1px #00268d2a;
 }
 
-input:checked + .slider.round::before{
+input:checked+.slider.round::before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(46px);
@@ -102,417 +108,508 @@ input:checked + .slider.round::before{
     border-radius: 50%;
 }
 
-   #logo{
-       width: 16.8%;
-       height: 4%;
-       margin-bottom: 4%;     
+#logo {
+    width: 16.8%;
+    height: 4%;
+    margin-bottom: 4%;
+}
+
+#campo {
+    margin-top: -2%;
+    margin-left: -6%;
+
+}
+
+#nome {
+    margin-top: -3%;
+    margin-left: 2%;
+    font-family: cursive;
+
+}
+
+#nome,
+h3 {
+    font-size: 30px;
+}
+
+#ponteiro {
+    height: 0%;
+    width: 9%;
+    padding-top: 3.9%;
+    margin-left: -15%;
+    transform-origin: 78px 85px;
+    rotate: z 0deg;
+}
+
+
+#campo_image {
+    border: solid 1px #6e6e6e91;
+    border-radius: 5px 5px 5px;
+    background: #1c1c1c4d;
+    box-shadow: 1px 1px 10px;
+    width: 30%;
+    margin-left: 33%;
+    margin-top: 5%;
+    width: 6.8em;
+}
+
+#col_img {
+    padding-left: 20%;
+    margin-top: -2%;
+    display: none;
+}
+
+#baixo,
+#normal,
+#sobre_pes,
+#obesidade,
+#obesidade2 {
+    width: 6.7em;
+    height: 14em;
+    border-radius: 4px 4px 4px;
+    display: none;
+}
+
+#dica_imc {
+    width: 54%;
+    margin-left: 13%;
+    color: #222222bf;
+    margin-top: -27%;
+    animation-name: avanca;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes avanca {
+    from {
+        margin-left: 16%;
     }
 
-    #campo{
-        margin-top: -2%;
-        margin-left: -6%;
-
+    to {
+        margin-left: 48%;
     }
+}
 
-    #nome{
-        margin-top: -3%;
-        margin-left: 2%;
-        font-family: cursive;
-        
-    }
+#dados_p {
+    border: solid 1px #fbfbfb;
+    border-radius: 12px;
+    text-align: center;
+    margin-right: 49%;
+    margin-left: 28%;
+    padding-top: 2px;
+    margin-top: 1%;
+}
 
-    #nome, h3{
-        font-size: 30px;
-    }
-
-    #ponteiro{
-        height: 0%;
-        width: 8%;
-        padding-top: 4.2%;
-        margin-left: -15%;
-        transform-origin: 78px 85px;
-        rotate: z 0deg;
-    }
+#texto_dica {
+    background-color: #252525ad;
+    border-radius: 4px;
+    margin-top: 4px;
+    border: 2px solid #00000000;
+    box-shadow: 8px 9px 12px 0px;
+    font-size: smaller;
+    text-align: center;
+}
 
 
-    #campo_image{
-        border: solid 1px #6e6e6e91;
-        border-radius: 5px 5px 5px;
-        background: #1c1c1c4d;
-        box-shadow: 1px 1px 10px;
-        width: 30%;
-        margin-left: 33%;
-        margin-top: 5%;
-        width: 6.8em;
-    }
+#campo_altura,
+#campo_peso {
+    width: 19%;
+    margin-left: 42%;
+    margin-top: 1%;
+}
 
-    #col_img {
-        padding-left: 20%;
-        margin-top: -2%;
-        display: none;
-    }
+#altura,
+#peso {
+    padding-left: 2%;
+    background-color: #6e6e6e26;
+    font-size: 14px;
 
-    #baixo,#normal,#sobre_pes,#obesidade,#obesidade2 {
-        width: 6.7em;
-        height: 14em;
-        border-radius: 4px 4px 4px;
-        display: none;
+}
+
+#btn_calcular {
+    margin-top: 1%;
+    margin-left: 1em;
+}
+
+#btn_calcular:hover {
+    background: rgb(83, 83, 83);
+}
+
+#btn_calcular:active {
+    background-color: #4d4d4d77;
+    box-shadow: 0 5px #0f0f0faf;
+    transform: translateY(4px);
+}
+
+
+#calculo_imc {
+    font-size: 18px;
+}
+
+#texto_imc {
+    font-size: 15px;
+}
+
+#calculo_imc,
+#texto_imc {
+    color: white;
+}
+
+@media only screen and (max-width: 1199px) {
+    #ponteiro {
+        transform-origin: 64px 73px;
     }
 
     #dica_imc {
-        width: 54%;
-        margin-left: 13%;
-        color: #222222bf;
-        margin-top: -27%;
-        animation-name: avanca;
-        animation-duration: 4s;
-        animation-fill-mode: forwards;
-
-    }
-
-    @keyframes avanca{
-        from {margin-left: 16%;}
-        to {margin-left: 48%;}
-    }
-
-    #dados_p {
-        border: solid 1px #fbfbfb;
-        border-radius: 12px;
-        text-align: center;
-        margin-right: 49%;
-        margin-left: 28%;
-        padding-top: 2px;
-        margin-top: 1%;
-    }
-
-    #texto_dica {
-        background-color: #252525ad;
-        border-radius: 4px;
-        margin-top: 4px;
-        border: 2px solid #00000000;
-        box-shadow: 8px 9px 12px 0px;
-        font-size: smaller;
-        text-align: center;
-    }
-
-
-    #campo_altura,#campo_peso {
-        width: 19%;
-        margin-left: 42%;
-        margin-top: 1%;
-    }
-
-    #altura,#peso {
-        background-color: #6e6e6e26;
-        font-size: 14px;
-
-    }
-
-    #btn_calcular {
-        margin-top: 1%;margin-left: 1em;
-    }
-
-    #btn_calcular:hover{
-        background: rgb(83, 83, 83);
-    }
-    
-    #btn_calcular:active{
-        background-color: #4d4d4d77;
-        box-shadow: 0 5px #0f0f0faf;
-        transform: translateY(4px);
-    }
-    
-
-    #calculo_imc {
-        font-size: 18px;
-    }
-
-    #texto_imc {
-        font-size: 15px;
-    }
-
-    #calculo_imc,#texto_imc {
-        color: white;
-    }
-
-@media only screen and (max-width: 1199px){
-     #ponteiro{
-        transform-origin: 64px 73px;
-     }
-
-     #dica_imc{
         margin-top: -37%;
-     }
-
-     @keyframes avanca{
-        from {margin-left: 22%;}
-        to {margin-left: 52%;}
     }
-}    
 
- 
+    @keyframes avanca {
+        from {
+            margin-left: 22%;
+        }
+
+        to {
+            margin-left: 52%;
+        }
+    }
+}
+
+
 @media only screen and (max-width: 991px) {
-    #campo_image{
+    #campo_image {
         margin-left: 29%;
 
     }
 
-    #logo{
+    #logo {
         width: 18.8%;
 
     }
 
-    #ponteiro{
-        transform-origin: 51px 53px;
-        width: 9%;
-        margin-left: -16%;
+    #ponteiro {
+        transform-origin: 55px 53px;
+        width: 10%;
+        margin-left: -16.6%;
+        margin-top: 0.3%;
     }
 
-    #altura, #peso{
+    #altura,
+    #peso {
         height: 2.2em;
     }
 
-    #dados_p{
+    #dados_p {
         margin-right: 48%;
         margin-left: 26%;
     }
 
-    #dica_imc{
+    #dica_imc {
         margin-left: 14%;
         margin-top: -52%;
     }
 
-    @keyframes avanca{
-        from {margin-left: 14%;}
-        to {margin-left: 52%;}
+    @keyframes avanca {
+        from {
+            margin-left: 14%;
+        }
+
+        to {
+            margin-left: 52%;
+        }
     }
-    
+
 }
 
-@media only screen and (max-width: 767px){      
-    #logo{
-       width: 33.8%;
+@media only screen and (max-width: 768px) {
+    #campo {
+        margin-top: -5%;
     }
 
-    #ponteiro{
+    #campo_altura,
+    #campo_peso {
+        width: 22%;
+        margin-left: 40%;
+        margin-top: 1.4%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #logo {
+        width: 33.8%;
+    }
+
+    #ponteiro {
         transform-origin: 68px 58px;
         width: 18.8%;
         margin-left: -29%;
         margin-top: 3.4%;
     }
 
-    #nome, h3{
+    #nome,
+    h3 {
         margin-top: -2%;
         margin-left: 3%;
         font-size: 38px;
     }
 
-    #campo_altura, #campo_peso{
+    #campo_altura,
+    #campo_peso {
         width: 34%;
         margin-left: 37%;
         margin-top: 2%;
     }
 
-    #altura, #peso{
+    #altura,
+    #peso {
         height: 1.9em;
-        font-size: 20.5px;
+        font-size: 15px;
     }
 
-    #btn_calcular{
+    #btn_calcular {
         width: 19%;
         font-size: 20px;
         margin-top: 3%;
     }
 
-    #dica_imc{
+    #dica_imc {
         margin-top: -80%;
-    
+
     }
 
-    #dados_p{
+    #dados_p {
         margin-right: 39%;
         margin-left: 24%;
         margin-top: 5%;
     }
 
-    #calculo_imc{
+    #calculo_imc {
         font-size: 23px;
     }
 
-    #texto_imc{
+    #texto_imc {
         font-size: 17px;
     }
-    #nome, h3{
+
+    #nome,
+    h3 {
         margin-top: 0%;
         margin-bottom: 0%;
     }
-    
-    @keyframes avanca{
-        from {margin-left: 14%;}
-        to {margin-left: 63%;}
+
+    @keyframes avanca {
+        from {
+            margin-left: 14%;
+        }
+
+        to {
+            margin-left: 63%;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+
+
+    #ponteiro {
+        transform-origin: 79px 65px;
+    }
+
+    #campo_image {
+        margin-left: 11%;
+    }
+
+    #dica_imc {
+        margin-top: -74%;
+    }
+
+    #dados_p {
+        margin-right: 56%;
+        margin-left: 7%;
+
+    }
+
+    @keyframes avanca {
+        from {
+            margin-left: 18%;
+        }
+
+        to {
+            margin-left: 45%;
+        }
     }
 }
 
 @media only screen and (max-width: 575px) {
-    
-
-    #ponteiro{
-        transform-origin: 79px 65px;
-    }
-
-    #campo_image{
-        margin-left: 11%;
-    }
-
-    #dica_imc{
-        margin-top: -74%;
-    }
-
-    #dados_p{
-        margin-right: 56%;
-        margin-left: 7%;
-        
-    }
-
-    @keyframes avanca{
-        from {margin-left: 18%;}
-        to {margin-left: 45%;}
-    }
-}
-
-@media only screen and (max-width: 575px){
-    #ponteiro{
+    #ponteiro {
         transform-origin: 75px 58px;
     }
 }
 
-@media only screen and (max-width: 540px){
-    #ponteiro{
-        transform-origin: 67px 52px;
-    }
-}  
-
-@media only screen and (max-width: 515px){
-    #ponteiro{
+@media only screen and (max-width: 540px) {
+    #ponteiro {
         transform-origin: 67px 52px;
     }
 }
 
+@media only screen and (max-width: 515px) {
+    #ponteiro {
+        transform-origin: 67px 52px;
+    }
 
-@media only screen and (max-width: 500px){
-    #ponteiro{
+    #btn_calcular {
+        width: 21%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    #ponteiro {
         transform-origin: 63px 46px;
     }
-    
-    #dados_p{
+
+    #dados_p {
         margin-right: 53%;
         margin-left: 5%;
     }
 }
 
-@media only screen and (max-width: 499px){
-    #ponteiro{
+@media only screen and (max-width: 499px) {
+    #ponteiro {
         transform-origin: 67px 51px;
     }
-}  
+}
 
 
-@media only screen and (max-width: 480px){
-    #ponteiro{
+@media only screen and (max-width: 480px) {
+    #ponteiro {
         transform-origin: 61px 44px;
     }
 
-    #dica_imc{
+    #dica_imc {
         margin-top: -91%;
     }
 
-    #campo_image{
+    #campo_image {
         margin-left: 5%;
     }
 
-    #dados_p{
+    #dados_p {
         margin-right: 59%;
         margin-left: -1%;
     }
-}   
+
+    #btn_calcular {
+        width: 21%;
+    }
+}
 
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px) {
     #ponteiro {
         transform-origin: 66px 54px;
     }
 
-    #logo{
+    #logo {
         width: 36.8%;
     }
 
-    #ponteiro{
+    #ponteiro {
         width: 19.8%;
         margin-left: -33%;
         margin-top: 3.4%;
     }
 
-    #campo_image{
+    #campo_image {
         margin-left: -17%;
     }
 
-    #campo_altura, #campo_peso{
+    #campo_altura,
+    #campo_peso {
         margin-top: 4%;
     }
 
-    #dados_p{
-       margin-right: 77%;
-       margin-left: -19%;
+    #dados_p {
+        margin-right: 77%;
+        margin-left: -19%;
     }
 
-    #dica_imc{
+    #dica_imc {
         margin-top: -98%;
         width: 85%;
     }
 
-    #btn_calcular{
-       width: 22%;
-       margin-top: 5%;
-       margin-bottom: 4%;
+    #btn_calcular {
+        width: 22%;
+        margin-top: 5%;
+        margin-bottom: 4%;
     }
 
-    @keyframes avanca{
-        from {margin-left: -18%;}
-        to {margin-left: 22%;}
+    @keyframes avanca {
+        from {
+            margin-left: -18%;
+        }
+
+        to {
+            margin-left: 22%;
+        }
     }
 
 }
 
-@media only screen and (max-width: 440px){
-    #ponteiro{
+@media only screen and (max-width: 440px) {
+    #ponteiro {
         transform-origin: 63px 49px;
     }
-}  
+}
 
-@media only screen and (max-width: 425px){
-    #ponteiro{
+@media only screen and (max-width: 430px) {
+    #ponteiro {
+        margin-top: 4.5%;
+    }
+
+    #nome {
+        margin-left: 7%;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    #ponteiro {
         transform-origin: 59px 49px;
     }
 
-    #dica_imc{
+    #dica_imc {
         margin-top: -103%;
     }
 
-    #campo_image{
+    #campo_image {
         margin-left: -18%;
     }
 
-    #dados_p{
+    #campo_altura,
+    #campo_peso {
+        margin-left: 39%;
+    }
+
+    #dados_p {
         margin-right: 77%;
         margin-left: -22%;
     }
 
-    @keyframes avanca{
-        from {margin-left: -18%;}
-        to {margin-left: 22%;}
+    @keyframes avanca {
+        from {
+            margin-left: -18%;
+        }
+
+        to {
+            margin-left: 22%;
+        }
     }
 
-    input:checked + .slider.round::before{
+    input:checked+.slider.round::before {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
@@ -522,136 +619,158 @@ input:checked + .slider.round::before{
     .switch {
         width: 59px;
     }
-      
 
-} 
-
-
-@media only screen and (max-width: 410px){
-    #ponteiro{
-        transform-origin: 63px 48px;
+    #btn_calcular {
+        width: 21%;
+        font-size: 15px;
+        margin-left: 11%;
     }
-}   
 
-@media only screen and (max-width: 394px){
-   #ponteiro{
-    transform-origin: 59px 44px;
-   }
 
-   #btn_calcular{
-    width: 24%;
-   }
-
-   #dica_imc{
-    margin-top: -114%;
-   }
-
-   #dados_p{
-    margin-right: 74%;
-    margin-left: -22%;
-   }
-
-   @keyframes avanca{
-    from {margin-left: -18%;}
-    to {margin-left: 24%;}
-  }
 }
 
-@media only screen and (max-width: 377px){   
-    #campo_altura, #campo_peso{
+
+@media only screen and (max-width: 410px) {
+    #ponteiro {
+        transform-origin: 63px 48px;
+    }
+}
+
+@media only screen and (max-width: 394px) {
+    #ponteiro {
+        transform-origin: 59px 44px;
+    }
+
+    #btn_calcular {
+        width: 24%;
+    }
+
+    #dica_imc {
+        margin-top: -114%;
+    }
+
+    #dados_p {
+        margin-right: 74%;
+        margin-left: -22%;
+    }
+
+    @keyframes avanca {
+        from {
+            margin-left: -18%;
+        }
+
+        to {
+            margin-left: 24%;
+        }
+    }
+}
+
+@media only screen and (max-width: 377px) {
+
+    #campo_altura,
+    #campo_peso {
         width: 39%;
     }
 }
 
 
-@media only screen and (max-width: 375px){   
-    #logo{
+@media only screen and (max-width: 375px) {
+    #logo {
         width: 40.8%;
     }
 
-    #ponteiro{
+    #ponteiro {
         transform-origin: 59px 38px;
         width: 21.8%;
         margin-left: -35%;
         margin-top: 5.1%;
     }
 
-    #campo_image{
+    #campo_image {
         margin-left: -23%;
     }
 
-    #campo_altura, #campo_peso{
+    #campo_altura,
+    #campo_peso {
         width: 39%;
-        margin-left: 34%;
+        margin-left: 35.6%;
         margin-top: 5%;
     }
 
-    #dica_imc{
+    #dica_imc {
         margin-top: -121%;
     }
-    
-    #dados_p{
+
+    #dados_p {
         margin-right: 77%;
         margin-left: -27%;
     }
 
-    #btn_calcular{
+    #btn_calcular {
         width: 25%;
-        margin-top: 6%;
+        margin-top: 4%;
         margin-bottom: 5%;
     }
 
-@media only screen and (max-width: 340px){
-    #ponteiro{
-        transform-origin: 50px 38px;
+    @media only screen and (max-width: 340px) {
+        #ponteiro {
+            transform-origin: 50px 38px;
+        }
     }
-}  
 
-@media only screen and (max-width: 323px){
-   #logo{
-    width: 47.8%;
-   }
+    @media only screen and (max-width: 323px) {
+        #logo {
+            width: 47.8%;
+        }
 
-   #ponteiro{
-    transform-origin: 61px 42px;
-    width: 27.8%;
-    margin-left: -42%;
-    margin-top: 6.1%;
-   }
+        #ponteiro {
+            transform-origin: 61px 42px;
+            width: 27.8%;
+            margin-left: -42%;
+            margin-top: 6.1%;
+        }
 
-    #campo_altura, #campo_peso{
-     width: 47%;
-     margin-left: 32%;
-     margin-top: 5%;   
-   }
+        #campo_altura,
+        #campo_peso {
+            width: 47%;
+            margin-left: 33%;
+            margin-top: 5%;
+        }
 
-   #campo_image{
-    margin-left: -28%;
-   }
+        #campo_image {
+            margin-left: -28%;
+        }
 
-   #dica_imc{
-    margin-top: -144%;
-   }
+        #dica_imc {
+            margin-top: -144%;
+        }
 
-   #dados_p{
-    margin-right: 73%;
-    margin-left: -33%;
-   }
+        #dados_p {
+            margin-right: 73%;
+            margin-left: -33%;
+        }
 
-   #campo_botao{
-    margin-top: 4%;
-   }
+        #campo_botao {
+            margin-top: 4%;
+        }
 
-   #btn_calcular{
-    width: 30%;
-    margin-bottom: 6%;
-   }
+        #btn_calcular {
+            width: 30%;
+            margin-bottom: 6%;
+            margin-left: 12%;
+            margin-top: 1.4%;
+        }
 
-   @keyframes avanca{
-    from {margin-left: -18%;}
-    to {margin-left: 27%;}
-  }
-}   
+        @keyframes avanca {
+            from {
+                margin-left: -18%;
+            }
+
+            to {
+                margin-left: 27%;
+            }
+        }
+    }
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -664,4 +783,8 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+:root {
+    color-scheme: only light;
 }
