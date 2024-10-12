@@ -466,7 +466,7 @@ input:checked+.slider.round::before {
 
 @media only screen and (max-width: 480px) {
     .container{
-        margin-left: -1.4%;
+        margin-left: -1.2%;
     }
 
     #ponteiro {
