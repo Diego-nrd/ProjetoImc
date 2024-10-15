@@ -1,3 +1,7 @@
+body{
+    overflow: hidden;
+}
+
 .dark_mode {
     background-color: #252525;
     color: white;
@@ -37,6 +41,27 @@
         box-shadow: 0 5px #0f0f0faf;
         transform: translateY(4px);
     }
+
+}
+
+#erro{
+    display: none;
+    width: 24%;
+    margin-bottom: -1.4%;
+    animation-name: avanca_erro;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes avanca_erro{
+    from{
+        margin-left: 112%;
+    }
+    to {
+        margin-left: 81%;
+    }
+
 
 }
 
@@ -246,6 +271,11 @@ input:checked+.slider.round::before {
 }
 
 @media only screen and (max-width: 1199px) {
+    #erro{
+        width: 25%;
+        font-size: smaller;
+    }
+    
     #ponteiro {
         transform-origin: 64px 73px;
     }
@@ -311,6 +341,24 @@ input:checked+.slider.round::before {
 }
 
 @media only screen and (max-width: 768px) {
+    #erro{
+        width: 34%;
+        font-size: smaller;
+        animation-name: avanca_erro;
+    }
+
+    @keyframes avanca_erro{
+        from{
+            
+            margin-left: 106%;
+        }
+        to {
+            margin-left: 71%;
+        }
+    
+    
+    }
+    
     #campo {
         margin-top: -5%;
     }
@@ -447,6 +495,11 @@ input:checked+.slider.round::before {
 
 
 @media only screen and (max-width: 500px) {
+    #erro{
+        width: 59%;
+        font-size: smaller;
+    }
+
     #ponteiro {
         transform-origin: 63px 46px;
     }
@@ -560,6 +613,16 @@ input:checked+.slider.round::before {
 }
 
 @media only screen and (max-width: 425px) {
+    @keyframes avanca_erro{
+        from{
+            
+            margin-left: 106%;
+        }
+        to {
+            margin-left: 48%;
+        }
+    }
+
     #ponteiro {
         transform-origin: 59px 49px;
     }
@@ -620,6 +683,11 @@ input:checked+.slider.round::before {
 }
 
 @media only screen and (max-width: 394px) {
+    #erro{
+        width: 67%;
+        font-size: smaller;
+    }
+
     #ponteiro {
         transform-origin: 59px 44px;
     }
@@ -692,6 +760,19 @@ input:checked+.slider.round::before {
     }
 
     @media only screen and (max-width: 340px) {
+        @keyframes avanca_erro{
+            from{
+                
+                margin-left: 106%;
+            }
+            to {
+                margin-left: 28%;
+            }
+        }    
+        #erro{
+            width: 79%;
+            font-size: smaller;
+        }
         #ponteiro {
             transform-origin: 50px 38px;
         }

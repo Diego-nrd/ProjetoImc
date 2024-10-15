@@ -29,6 +29,13 @@ function sepPeso(input) {
 
 }
 
+function erro() {
+    $('#erro').show(100);
+    setTimeout(function() {
+        $('#erro').hide(1000);
+    }, 100);
+}
+
 function imc(tipo, op) {
     if (tipo === 'acao' && op === 'btn') {
         const v_altura = parseFloat(document.getElementById("altura").value);
@@ -101,7 +108,10 @@ function imc(tipo, op) {
                 "Possibilidade de existirem doenças graves<br>" +
                 "O tratamento deve ser o mais urgente.";
         } else {
-            alert('Existem campos vazio !!')
+            $('#erro').show();
+            setTimeout(function() {
+                $('#erro').hide();
+            }, 4000);
         }
         document.getElementById(displayId).style.display = "block";
         document.getElementById('col_img').style.display = "block";
