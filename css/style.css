@@ -717,6 +717,20 @@ input:checked+.slider.round::before {
 }
 
 @media only screen and (max-width: 377px) {
+    @keyframes avanca_erro{
+        from{
+            
+            margin-left: 106%;
+        }
+        to {
+            margin-left: 28%;
+        }
+    }    
+    #erro{
+        width: 79%;
+        font-size: smaller;
+    }
+    
     #campo_altura,#campo_peso {
         width: 39%;
     }
@@ -760,19 +774,6 @@ input:checked+.slider.round::before {
     }
 
     @media only screen and (max-width: 340px) {
-        @keyframes avanca_erro{
-            from{
-                
-                margin-left: 106%;
-            }
-            to {
-                margin-left: 28%;
-            }
-        }    
-        #erro{
-            width: 79%;
-            font-size: smaller;
-        }
         #ponteiro {
             transform-origin: 50px 38px;
         }
