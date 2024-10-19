@@ -1,12 +1,12 @@
-body{
+body {
     overflow: hidden;
 }
 
 .dark_mode {
     background-color: #252525;
     color: white;
-    #altura,
-    #peso {
+
+    #altura,#peso {
         padding-left: 2%;
         background-color: #ffffff;
         font-size: 15px;
@@ -17,7 +17,7 @@ body{
         border: 1px solid #000;
     }
 
-    #calculo_imc, #texto_imc {
+    #calculo_imc,#texto_imc {
         color: #000;
     }
 
@@ -44,24 +44,44 @@ body{
 
 }
 
-#erro{
+.alert-warning {
+    color: #3a2b00;
+    background-color: #f7dc90;
+    border: #f7dc90;
+}
+
+.progress {
+    height: 5px;
+    margin-top: 6px;
+    margin-bottom: -10px;
+    background-color: #00000000;
+}
+
+#bar {
+    width: 0%;
+    transition: none;
+    background-color: #000000b8;
+}
+
+#erro {
     display: none;
     width: 24%;
-    margin-bottom: -1.4%;
+    margin-bottom: -11px;
+    padding-top: 0%;
+    margin-top: 6px;
     animation-name: avanca_erro;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    
 }
 
-@keyframes avanca_erro{
-    from{
+@keyframes avanca_erro {
+    from {
         margin-left: 112%;
     }
+
     to {
         margin-left: 81%;
     }
-
 
 }
 
@@ -271,11 +291,15 @@ input:checked+.slider.round::before {
 }
 
 @media only screen and (max-width: 1199px) {
-    #erro{
+    #erro {
         width: 25%;
         font-size: smaller;
     }
-    
+
+    a.close {
+        font-size: 19px;
+    }
+
     #ponteiro {
         transform-origin: 64px 73px;
     }
@@ -297,6 +321,12 @@ input:checked+.slider.round::before {
 
 
 @media only screen and (max-width: 991px) {
+    #erro {
+        width: 34%;
+        font-size: smaller;
+        animation-name: avanca_erro;
+    }
+
     #campo_image {
         margin-left: 29%;
 
@@ -341,24 +371,24 @@ input:checked+.slider.round::before {
 }
 
 @media only screen and (max-width: 768px) {
-    #erro{
+    #erro {
         width: 34%;
         font-size: smaller;
         animation-name: avanca_erro;
+        margin-bottom: -5px;
     }
 
-    @keyframes avanca_erro{
-        from{
-            
+    @keyframes avanca_erro {
+        from {
+
             margin-left: 106%;
         }
+
         to {
             margin-left: 71%;
         }
-    
-    
     }
-    
+
     #campo {
         margin-top: -5%;
     }
@@ -371,6 +401,16 @@ input:checked+.slider.round::before {
 }
 
 @media only screen and (max-width: 767px) {
+    #erro {
+        width: 46%;
+        font-size: smaller;
+        animation-name: avanca_erro;
+    }
+
+    a.close {
+        font-size: 18px;
+    }
+
     #logo {
         width: 33.8%;
     }
@@ -483,6 +523,28 @@ input:checked+.slider.round::before {
     }
 }
 
+@media only screen and (max-width: 517px) {
+    #erro {
+        width: 46.5%;
+        font-size: smaller;
+        animation-name: avanca_erro;
+    }
+
+    a.close {
+        font-size: 16.5px;
+    }
+
+    @keyframes avanca_erro {
+        from {
+            margin-left: 106%;
+        }
+
+        to {
+            margin-left: 55%;
+        }
+    }
+}
+
 @media only screen and (max-width: 515px) {
     #ponteiro {
         transform-origin: 67px 52px;
@@ -493,11 +555,46 @@ input:checked+.slider.round::before {
     }
 }
 
+@media only screen and (max-width: 509px) {
+    #erro {
+        width: 47.5%;
+        font-size: smaller;
+        animation-name: avanca_erro;
+    }
+
+    a.close {
+        font-size: 16.5px;
+    }
+
+    @keyframes avanca_erro {
+        from {
+            margin-left: 106%;
+        }
+
+        to {
+            margin-left: 55%;
+        }
+    }
+}
 
 @media only screen and (max-width: 500px) {
-    #erro{
-        width: 59%;
+    #erro {
+        width: 52%;
         font-size: smaller;
+    }
+
+    a.close {
+        font-size: 16.5px;
+    }
+
+    @keyframes avanca_erro {
+        from {
+            margin-left: 106%;
+        }
+
+        to {
+            margin-left: 51.5%;
+        }
     }
 
     #ponteiro {
@@ -518,7 +615,7 @@ input:checked+.slider.round::before {
 
 
 @media only screen and (max-width: 480px) {
-    .container{
+    .container {
         margin-left: -1.2%;
     }
 
@@ -544,6 +641,26 @@ input:checked+.slider.round::before {
     }
 }
 
+@media only screen and (max-width: 458px) {
+    #erro {
+        width: 54%;
+        font-size: smaller;
+    }
+
+    a.close {
+        font-size: 16.5px;
+    }
+
+    @keyframes avanca_erro {
+        from {
+            margin-left: 106%;
+        }
+
+        to {
+            margin-left: 50%;
+        }
+    }
+}
 
 @media only screen and (max-width: 450px) {
     #ponteiro {
@@ -596,13 +713,52 @@ input:checked+.slider.round::before {
 
 }
 
+@media only screen and (max-width: 443px) {
+    #erro {
+        width: 55%;
+        font-size: smaller;
+    }
+
+    a.close {
+        font-size: 16.5px;
+    }
+
+    @keyframes avanca_erro {
+        from {
+            margin-left: 106%;
+        }
+
+        to {
+            margin-left: 50%;
+        }
+    }
+}
+
 @media only screen and (max-width: 440px) {
     #ponteiro {
         transform-origin: 63px 49px;
     }
+
 }
 
+
 @media only screen and (max-width: 430px) {
+    #erro {
+        width: 57%;
+        font-size: smaller;
+    }
+
+    @keyframes avanca_erro {
+        from {
+
+            margin-left: 106%;
+        }
+
+        to {
+            margin-left: 48%;
+        }
+    }
+
     #ponteiro {
         margin-top: 4.5%;
     }
@@ -613,11 +769,12 @@ input:checked+.slider.round::before {
 }
 
 @media only screen and (max-width: 425px) {
-    @keyframes avanca_erro{
-        from{
-            
+    @keyframes avanca_erro {
+        from {
+
             margin-left: 106%;
         }
+
         to {
             margin-left: 48%;
         }
@@ -626,7 +783,7 @@ input:checked+.slider.round::before {
     #ponteiro {
         transform-origin: 59px 49px;
     }
-    
+
     #dica_imc {
         margin-top: -103%;
     }
@@ -676,14 +833,48 @@ input:checked+.slider.round::before {
     }
 }
 
+@media only screen and (max-width: 414px) {
+    #erro {
+        width: 60%;
+        font-size: smaller;
+    }
+
+    @keyframes avanca_erro {
+        from {
+
+            margin-left: 106%;
+        }
+
+        to {
+            margin-left: 45%;
+        }
+    }
+}
+
 @media only screen and (max-width: 410px) {
+    #erro {
+        width: 79%;
+        font-size: smaller;
+    }
+
+    @keyframes avanca_erro {
+        from {
+
+            margin-left: 106%;
+        }
+
+        to {
+            margin-left: 37%;
+        }
+    }
+
     #ponteiro {
         transform-origin: 63px 48px;
     }
 }
 
 @media only screen and (max-width: 394px) {
-    #erro{
+    #erro {
         width: 67%;
         font-size: smaller;
     }
@@ -717,20 +908,7 @@ input:checked+.slider.round::before {
 }
 
 @media only screen and (max-width: 377px) {
-    @keyframes avanca_erro{
-        from{
-            
-            margin-left: 106%;
-        }
-        to {
-            margin-left: 28%;
-        }
-    }    
-    #erro{
-        width: 79%;
-        font-size: smaller;
-    }
-    
+
     #campo_altura,#campo_peso {
         width: 39%;
     }
@@ -773,13 +951,63 @@ input:checked+.slider.round::before {
         margin-bottom: 5%;
     }
 
+    @media only screen and (max-width: 362px) {
+        #erro {
+            width: 72%;
+            font-size: smaller;
+        }
+
+        @keyframes avanca_erro {
+            from {
+
+                margin-left: 106%;
+            }
+
+            to {
+                margin-left: 32%;
+            }
+        }
+    }
+
     @media only screen and (max-width: 340px) {
+        #erro {
+            width: 79%;
+            font-size: smaller;
+        }
+
+        @keyframes avanca_erro {
+            from {
+
+                margin-left: 106%;
+            }
+
+            to {
+                margin-left: 28%;
+            }
+        }
+
         #ponteiro {
             transform-origin: 50px 38px;
         }
     }
 
     @media only screen and (max-width: 323px) {
+        @keyframes avanca_erro {
+            from {
+
+                margin-left: 106%;
+            }
+
+            to {
+                margin-left: 28%;
+            }
+        }
+
+        #erro {
+            width: 80%;
+            font-size: smaller;
+        }
+
         #logo {
             width: 47.8%;
         }

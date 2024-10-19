@@ -19,9 +19,13 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div id="erro" class="alert alert-danger">
+                <div id="erro" class="alert alert-warning">
                    <a href="#" class="close" data-dismiss="alert">&times;</a>
-                   <strong>Erro! </strong>Existem campos vazio!!
+                   <strong>Ops! </strong>Existem campos vazio!!
+                   <div class="progress">
+                    <div id="bar" class="progress-bar progress-bar-striped progress-bar-animated">
+                    </div>
+                   </div>  
                 </div>
                 <div id="btn_dark" class="d-flex justify-content-center" >
                     <label class="switch">
@@ -38,8 +42,7 @@
                 </div>
                 <div id="campo_altura" class="d-flex justify-content-center">
                     <input id="altura" placeholder="Altura: 1.80" type="text" oninput="sepAlt(this)" maxlength="4"
-                    class="form-control text-dark">
-                    <div class="invalid-feedback">teste</div>
+                    class="form-control text-dark" onclick="change()">
                 </div>
                 <div id="campo_peso" class="d-flex justify-content-center">
                     <input id="peso" placeholder="Peso: 50.0" type="text" oninput="sepPeso(this)" maxlength="5"

@@ -30,10 +30,34 @@ function sepPeso(input) {
 }
 
 function erro() {
-    $('#erro').show(100);
+    $('#erro').show();
     setTimeout(function() {
-        $('#erro').hide(1000);
-    }, 100);
+        $('#erro').hide();
+    }, 4230);
+}
+
+function move() {
+    var i = 0
+    if (i == 0) {
+        i = 1;
+        var bar = document.getElementById("bar");
+        var width = 1;
+        var id = setInterval(frame, 20);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                bar.style.width = width + '%';
+            }
+        }
+    }
+}
+
+function change() {
+    const sections = ['altura', 'peso'];
+    sections.forEach(id => document.getElementById(id).style.boxShadow = "");
+    sections.forEach(id => document.getElementById(id).style.borderColor = "");
 }
 
 function imc(tipo, op) {
@@ -51,6 +75,7 @@ function imc(tipo, op) {
         document.getElementById('col_img').style.display = "none";
 
         let backgroundColor = "";
+        let color = "";
         let text = "";
         let displayId = "";
         let dica = "";
@@ -108,10 +133,19 @@ function imc(tipo, op) {
                 "Possibilidade de existirem doenças graves<br>" +
                 "O tratamento deve ser o mais urgente.";
         } else {
-            $('#erro').show();
-            setTimeout(function() {
-                $('#erro').hide();
-            }, 4000);
+            let box_Shadow = "0px 0px 0px .1rem #ff00007d";
+            let border_Color = "#ff3838";
+
+            const sections = ['altura', 'peso'];
+            sections.forEach(id => document.getElementById(id).style.boxShadow = box_Shadow);
+            sections.forEach(id => document.getElementById(id).style.borderColor = border_Color);
+
+            setTimeout(function () {
+                erro();
+            }, .1);
+            setTimeout(function () {
+                move();
+            }, 2000);
         }
         document.getElementById(displayId).style.display = "block";
         document.getElementById('col_img').style.display = "block";
@@ -148,6 +182,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
-
-
